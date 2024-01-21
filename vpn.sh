@@ -7,6 +7,7 @@ if [ ! -d cfgs ]; then
 	cd cfgs
 	unzip ../configurations
 	rm configurations
+	cd ../
 fi
 stty echo
 
