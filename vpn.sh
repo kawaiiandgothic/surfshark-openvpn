@@ -20,6 +20,8 @@ password="password"
 echo $username >> tmp
 echo $password >> tmp
 
-sudo openvpn --config cfgs/$server_name --auth-user-pass tmp
+# --redirect-gateway routes all traffic on your computer through openvpn, remove if don't want.
+# however i assume most want this.
+sudo openvpn --config cfgs/$server_name --redirect-gateway def1--auth-user-pass tmp
 
 rm tmp
