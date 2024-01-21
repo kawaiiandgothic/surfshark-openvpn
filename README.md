@@ -10,5 +10,6 @@ from https://my.surfshark.com/vpn/manual-setup/main/openvpn<br />
 and configure your preferred server location<br />
 
 # usage
-- on first run: sudo chmod +x run.sh
+clone the repo
+- on first run: sudo chmod +x run.sh && ./run.sh
 - afterwards just: ./run.sh
