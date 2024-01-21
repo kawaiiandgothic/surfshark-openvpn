@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
 stty -echo
-if test -d cfgs; then
-	wget https://my.surfshark.com/vpn/api/v1/server/configurations -o cfgs/
+if [ ! -d cfgs ]; then
+	wget https://my.surfshark.com/vpn/api/v1/server/configurations
+	mkdir cfgs
+	cd cfgs
+	unzip ../configurations
+	rm configurations
 fi
 stty echo
 
