@@ -2,7 +2,8 @@ if test -d cfgs; then
 	wget https://my.surfshark.com/vpn/api/v1/server/configurations -o cfgs/
 fi
 
-server_name=$(ls cfgs/ | grep us | grep dal |  grep udp)
+# e.g dallas tx server:  server_name=$(ls cfgs/ | grep us | grep dal |  grep udp)
+server_name=$(ls cfgs/ | grep country | grep city |  grep type)
 
 username="username"
 password="password"
